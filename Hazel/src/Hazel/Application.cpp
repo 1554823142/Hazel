@@ -2,7 +2,7 @@
 namespace Hazel {
 	Application::Application()
 	{
-
+		
 	}
 	Application::~Application() 
 	{
