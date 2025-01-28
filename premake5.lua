@@ -24,6 +24,7 @@ project "Hazel"
     }
     includedirs
     {
+        "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include"
     }
 
@@ -41,6 +42,7 @@ project "Hazel"
         {
             ("{COPYFILE} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
         }
+        buildoptions { "/utf-8" }
 
     filter "configurations:Debug"
         defines "HZ_DEBUG"
@@ -83,6 +85,7 @@ project "Sandbox"
         staticruntime "On"
         systemversion "latest"
 
+        buildoptions { "/utf-8" }
         defines
         {
            "HZ_PLATFORM_WINDOWS"
