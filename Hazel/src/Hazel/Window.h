@@ -7,6 +7,7 @@
 
 namespace Hazel {
 
+	// windowd attrs, including title and size
 	struct WindowProps
 	{
 		std::string Title;
