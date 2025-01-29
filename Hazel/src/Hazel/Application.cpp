@@ -31,6 +31,6 @@ namespace Hazel {
 
 	void Application::OnEvent(Event& e)
 	{
-		HZ_CORE_INFO("{0}", e);
+		HZ_CORE_INFO("{0}", e.ToString());
 	}
 }
