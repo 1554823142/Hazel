@@ -35,5 +35,5 @@ namespace Hazel{
 //在分发构建时禁用或替换 HZ_CORE_INFO 宏的功能（例如，不记录 INFO 级别的日志）。
 //为了在发布版本中移除日志输出，从而提高性能或避免在生产环境中暴露不必要的信息。
 //不会暴露在二进制文件中
-#define HZ_CORE_INFO
+//#define HZ_CORE_INFO
 
